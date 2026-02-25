@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#uno {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+#sub-uno {
+    background-color: #76B900;
+}
+
+#sub-dos {
+    background-color: #76B900;
+}
+
+#sub-tres {
+    background-color: aqua;
+}
+
+#sub-cuatro {
+    background-color: beige;
+}
+
+.hijo {
+    width: 100px;
+    height: 100px;
+}

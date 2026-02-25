@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+li {
+    display: inline-block;
+
+}
+
+img {
+    vertical-align: middle;
+    margin-left: 50px;
+    padding-top: 5px;
+}
+
+#buscar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 90px;
+    color: #8f9091;
+    border: 1px solid #8f9091;
+    border-radius: 5px;
+    padding: 10px 90px 10px 15px;
+}
+
+#buscalogo {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px 8px 8px 8px;
+    border: 1px solid #da291c;
+    background-color: #da291c;
+    border-radius: 5px;
+
+
+}
+
+#soporte {
+    &:hover {
+        background-color: #b72218;
+    }
+
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 40px;
+    margin-left: 500px;
+    margin-top: 20px;
+
+}
+
+#items {
+    background-color: #0033a0;
+    width: 100%;
+    padding: 20px;
+
+    a:hover {
+        background-color: #b72218;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        padding: 18px;
+
+    }
+}
