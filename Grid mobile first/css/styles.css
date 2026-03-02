@@ -1,0 +1,34 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    
+    width: 320px;
+    height: 500px;
+    font-size: 20px;
+    display: grid;
+    grid-column: auto;
+    
+
+    #Encabezado{
+        background-color: antiquewhite;
+    }
+    #Navegacion{
+        background-color: aquamarine;
+    } 
+    #Productos{
+        background-color: azure;
+    }
+    #Servicios{
+        background-color: bisque;
+    } 
+    #Enlaces{
+        background-color: #76B900;
+    }
+    #Pie{
+        background-color: rgb(173, 130, 213);
+    }
+}
