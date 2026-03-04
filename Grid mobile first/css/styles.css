@@ -1,34 +1,68 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-body{
-    
-    width: 320px;
-    height: 500px;
+body {
+
+    width: 100vh;
+    height: 100vh;
     font-size: 20px;
     display: grid;
-    grid-column: auto;
-    
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "Encabezado"
+        "Navegacion"
+        "Productos"
+        "Servicios"
+        "Enlaces"
+        "Pie"
+    ;
 
-    #Encabezado{
+
+    #Encabezado {
+        grid-area: Encabezado;
         background-color: antiquewhite;
     }
-    #Navegacion{
+
+    #Navegacion {
+        grid-area: Navegacion;
         background-color: aquamarine;
-    } 
-    #Productos{
+    }
+
+    #Productos {
+        grid-area: Productos;
         background-color: azure;
     }
-    #Servicios{
+
+    #Servicios {
+        grid-area: Servicios;
         background-color: bisque;
-    } 
-    #Enlaces{
+    }
+
+    #Enlaces {
+        grid-area: Enlaces;
         background-color: #76B900;
     }
-    #Pie{
+
+    #Pie {
+        grid-area: Pie;
         background-color: rgb(173, 130, 213);
     }
+}
+
+@media (min-width : 481px)and (max-width: 680px) {
+    body {
+        grid-template-columns: 40% auto 30%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "Encabezado Encabezado Navegacion"
+            "Productos Productos Productos"
+            "Servicios Servicios Servicios"
+            "Pie Pie Enlaces"
+        ;
+    }
+
 }
