@@ -1,0 +1,52 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#encabezado {
+    width: 100vw;
+    height: 20vh;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cuadradito {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-color: red;
+
+}
+
+#menu {
+    background-color: red;
+    width: 100vw;
+    height: 10vh;
+}
+#link{
+    width: 30vw;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+#pie{
+    width: 100vw;
+    height: 20vh;
+    background-color: magenta;
+}
+#uno, #dos{
+    width: 100%;
+    height: 50%;
+    background-color: gold;
+}
+
+section {
+    width: 100vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+}
