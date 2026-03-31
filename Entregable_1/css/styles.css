@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     /* Paleta*/
     --primary: #2672A7;
@@ -28,15 +34,12 @@
     --shadow-card: 0 4px 20px rgba(14, 81, 138, 0.3);
     --shadow-hover: 0 12px 40px rgba(14, 81, 138, 0.5);
 
-    /* === Gradientes principales === */
+
     --gradient-primary: linear-gradient(135deg, #FF7A40 0%, #F16529 100%);
-    /* Naranja para botones y logos */
     --gradient-accent: linear-gradient(135deg, #FF7A40 0%, #F16529 100%);
-    /* Naranja para textos destacados */
-    --gradient-blue: linear-gradient(135deg, #4E92C2 0%, #2672A7 100%);
-    --gradient-hero: linear-gradient(180deg, #4E92C2 0%, #2672A7 40%, #0E518A 100%);
-    /* Fondo visual de la imagen */
-    --gradient-section: linear-gradient(180deg, #0E518A 0%, #2672A7 100%);
+    --gradient-blue: linear-gradient(135deg, #2fa2f5 0%, #2672A7 100%);
+    --gradient-hero: linear-gradient(180deg, #2fa2f5 0%, #2672A7 40%, #0E518A 100%);
+    --gradient-section: linear-gradient(180deg, #2fa2f5 0%, #2672A7 100%);
 
     /* === Misceláneos === */
     --radius: 16px;
@@ -44,15 +47,6 @@
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --font-main: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
-}
-
-/* ---------- Base Reset ---------- */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 html {
@@ -210,6 +204,7 @@ ul {
 /* ================================================
    HERO
    ================================================ */
+
 .hero-section {
     position: relative;
     min-height: 100vh;
@@ -217,7 +212,16 @@ ul {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: var(--gradient-hero);
+    background-color: #114578;
+    background-image:
+        radial-gradient(circle at 85% 10%, #2974b1 0%, transparent 60%),
+        radial-gradient(circle at 10% 90%, #2068a4 0%, transparent 60%),
+        radial-gradient(circle at 95% 95%, #041830 0%, transparent 70%),
+        radial-gradient(circle at 5% 5%, #072a50 0%, transparent 55%);
+}
+
+.hero-overlay {
+    display: none;
 }
 
 .hero-overlay {
@@ -463,6 +467,12 @@ ul {
    RESPONSIVE – MOBILE (≤ 768px)
    ================================================ */
 @media (max-width: 768px) {
+
+    #logoGie {
+        height: 15vh;
+        width: 10vw;
+    }
+
     .hero-stats {
         gap: 0.8rem;
     }
@@ -493,6 +503,10 @@ ul {
    RESPONSIVE – SMALL MOBILE (≤ 480px)
    ================================================ */
 @media (max-width: 480px) {
+    #logoGie {
+        display: none;
+    }
+
     .stat-number {
         font-size: 1.4rem;
     }
