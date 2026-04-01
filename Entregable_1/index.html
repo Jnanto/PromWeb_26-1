@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet" />
@@ -17,6 +18,7 @@
 
 <body>
 
+    <!-- ////////////////////////// NAVEGADOR /////////////////////// -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#home">
@@ -43,14 +45,11 @@
         </div>
     </nav>
 
-
+    <!-- ////////////////////////// DASH /////////////////////// -->
     <section id="home" class="hero-section">
         <div class="hero-overlay"></div>
         <div class="hero-particles" id="particles"></div>
         <div class="container hero-content text-center">
-            <!-- <p class="hero-badge animate__animated animate__fadeInDown animate__delay-1s">
-                <i class="fa-solid fa-atom"></i> Ingeniería de Sistemas
-            </p> -->
             <h1 class="hero-title animate__animated animate__fadeInUp animate__delay-1s">
                 Grupo de Investigación <br /><span class="gradient-text">GIECOM</span>
             </h1>
@@ -76,6 +75,143 @@
             <div class="scroll-dot"></div>
         </div>
     </section>
+
+    <!-- ////////////////////////// CARUSEL /////////////////////// -->
+    <section id="carrusel">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/1.jpeg" class="d-block w-100" alt="image1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Una muestra de nuestro impacto</h5>
+                        <p>Visita a la vereda Damas Arriba.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/2.jpg" class="d-block w-100" alt="image2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Unos pasos por congresos</h5>
+                        <p>Nos apasiona lo que hacemos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/4.jpg" class="d-block w-100" alt="image3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>La COP16</h5>
+                        <p>Uno de nuestros más grandes logros.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <main>
+        <!-- ////////////////////////// SOBRE /////////////////////// -->
+        <section id="sobre" class="section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+
+                    <h2 class="section-title">Sobre el Semillero</h2>
+                    <p class="section-desc">Conoce nuestra historia, propósito y líneas de trabajo.</p>
+                </div>
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="about-image-box">
+                            <div class="about-img-placeholder">
+                                <img src="./img/giecom.png" alt="GieIMG">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <h3 class="subsection-title">Reseña Histórica</h3>
+                        <p class="text-body-custom">El Semillero de Investigación en Ingeniería de Sistemas (SIIS) nació
+                            en
+                            2016 como una iniciativa de estudiantes y docentes comprometidos con la generación de
+                            conocimiento aplicado. A lo largo de los años ha crecido hasta convertirse en uno de los
+                            grupos
+                            más activos de la facultad, participando en convocatorias nacionales e internacionales.</p>
+                        <p class="text-body-custom">Hoy contamos con múltiples líneas de investigación consolidadas,
+                            alianzas con empresas del sector tecnológico y una comunidad activa de más de 120
+                            integrantes
+                            entre estudiantes, egresados y docentes.</p>
+                    </div>
+                </div>
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="0">
+                        <div class="mv-card">
+                            <div class="mv-icon"><i class="fa-solid fa-bullseye"></i></div>
+                            <h4>Misión</h4>
+                            <p>GIECOM está comprometido con la generación de conocimiento científico y tecnológico,
+                                mediante el trabajo multidisciplinario en las áreas de gestión del conocimiento,
+                                comunicación, electrónica e informática, de tal manera que los resultados promuevan el
+                                crecimiento y formación de los investigadores, así como el desarrollo tecnológico en la
+                                región Amazónica, realizando alianzas estratégicas con diferentes empresas, las cuales
+                                se beneficien de nuestros logros alcanzados y de igual forma ayuden a la financiación de
+                                los diferentes proyectos a realizar.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="mv-card">
+                            <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
+                            <h4>Visión</h4>
+                            <p>Para el año 2018, GIECOM se consolidará como un grupo de investigación reconocido a nivel
+                                nacional e internacional en la generación de conocimiento en áreas de gestión del
+                                conocimiento, comunicación, electrónica e informática, contando con un personal
+                                altamente cualificado y generando proyectos multidisciplinarios que fortalezcan el
+                                desarrollo empresarial de la Región, promoviendo los proyectos que se desarrollan a las
+                                instituciones o empresas para un mutuo beneficio.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="mv-card">
+                            <div class="mv-icon"><i class="fa-solid fa-trophy"></i></div>
+                            <h4>Objetivos</h4>
+                            <p>Desarrollar competencias investigativas, publicar resultados científicos, participar
+                                en
+                                eventos académicos y fortalecer alianzas estratégicas con el sector público y privado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up">
+                    <h3 class="subsection-title text-center mb-4">Líneas de Investigación</h3>
+                    <div class="lines-grid">
+                        <div class="line-item" data-aos="flip-left" data-aos-delay="0">
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Informática educativa</span>
+                        </div>
+                        <div class="line-item" data-aos="flip-left" data-aos-delay="100">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                            <span>Economía circular</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+
     <script src="./js/bootstrap.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/lightbox.js"></script>

@@ -51,11 +51,11 @@ window.addEventListener('scroll', setActiveLink, { passive: true });
 
 /* ─── 5. Close mobile nav on link click ─── */
 const navCollapse = document.getElementById('navMenu');
+const navbarToggler = document.querySelector('.navbar-toggler');
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    if (navCollapse.classList.contains('show')) {
-      const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
-      if (bsCollapse) bsCollapse.hide();
+    if (navCollapse.classList.contains('show') && navbarToggler) {
+      navbarToggler.click();
     }
   });
 });
@@ -147,18 +147,18 @@ filterBtns.forEach(btn => {
 
 /* ─── 10. Contact form ─── */
 const contactForm = document.getElementById('contactForm');
-const formSuccess  = document.getElementById('formSuccess');
-const submitBtn    = document.getElementById('submitBtn');
+const formSuccess = document.getElementById('formSuccess');
+const submitBtn = document.getElementById('submitBtn');
 
 if (contactForm) {
   contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    const name  = document.getElementById('contactName').value.trim();
+    const name = document.getElementById('contactName').value.trim();
     const email = document.getElementById('contactEmail').value.trim();
-    const msg   = document.getElementById('contactMsg').value.trim();
+    const msg = document.getElementById('contactMsg').value.trim();
 
     if (!name || !email || !msg) {
-      ['contactName','contactEmail','contactMsg'].forEach(id => {
+      ['contactName', 'contactEmail', 'contactMsg'].forEach(id => {
         const f = document.getElementById(id);
         if (!f.value.trim()) {
           f.style.borderColor = '#d41217';
