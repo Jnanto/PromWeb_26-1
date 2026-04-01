@@ -50,25 +50,25 @@
         <div class="hero-overlay"></div>
         <div class="hero-particles" id="particles"></div>
         <div class="container hero-content text-center">
-            <h1 class="hero-title animate__animated animate__fadeInUp animate__delay-1s">
+            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 Grupo de Investigación <br /><span class="gradient-text">GIECOM</span>
             </h1>
-            <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-2s">
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
                 Gestión del Conocimiento, Electrónica, Informática y Comunicaciones.
             </p>
-            <div class="hero-stats animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="hero-stats" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                 <div class="stat-item"><span class="stat-number" data-target="48">3</span><span
                         class="stat-label">Proyectos</span></div>
-                <div class="stat-item"><span class="stat-number" data-target="120">18</span><span
+                <div class="stat-item"><span class="stat-number" data-target="120">10</span><span
                         class="stat-label">Integrantes</span></div>
                 <div class="stat-item"><span class="stat-number" data-target="32">20</span><span
                         class="stat-label">Publicaciones</span></div>
                 <div class="stat-item"><span class="stat-number" data-target="8">8</span><span
                         class="stat-label">Años</span></div>
             </div>
-            <div class="hero-btns animate__animated animate__fadeInUp animate__delay-2s">
-                <a href="#sobre" class="btn-primary-custom">Conoce Más <i class="fa-solid fa-arrow-down"></i></a>
-                <a href="#contacto" class="btn-outline-custom">Únete al Semillero</a>
+            <div class="hero-btns" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                <a href="#sobre" class="btn-primary-custom">Conoce Más</a>
+                <a href="#contacto" id="unete" class="btn-outline-custom">Únete</a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -123,90 +123,488 @@
         </div>
     </section>
 
-    <main>
-        <!-- ////////////////////////// SOBRE /////////////////////// -->
-        <section id="sobre" class="section-padding">
-            <div class="container">
-                <div class="section-header" data-aos="fade-up">
 
-                    <h2 class="section-title">Sobre Nosotros</h2>
-                    <p class="section-desc">Conoce nuestra historia, propósito y líneas de investigación.</p>
-                </div>
-                <div class="row align-items-center mb-5">
-                    <div class="col-lg-6" data-aos="fade-right">
-                        <div class="about-image-box">
-                            <div class="about-img-placeholder">
-                                <img src="./img/giecom.png" alt="GieIMG">
-                            </div>
+    <!-- ////////////////////////// SOBRE /////////////////////// -->
+    <section id="sobre" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
 
+                <h2 class="section-title">Sobre Nosotros</h2>
+                <p class="section-desc">Conoce nuestra historia, propósito y líneas de investigación.</p>
+            </div>
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-image-box">
+                        <div class="about-img-placeholder">
+                            <img src="./img/giecom.png" alt="GieIMG">
                         </div>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-left">
-                        <h3 class="subsection-title">Nuestra historia</h3>
-                        <p class="text-body-custom">El Semillero de Gestión del Conocimiento, Electrónica, Informática y
-                            Comunicaciones GIECOM
-                            surgio como una iniciativa de estudiantes y docentes comprometidos con la generación de
-                            conocimiento aplicado. A lo largo de los años ha crecido hasta convertirse en uno de los
-                            grupos
-                            más activos de la facultad, participando en convocatorias nacionales e internacionales.</p>
-                        <p class="text-body-custom">Y hoy contamos con múltiples líneas de investigación consolidadas
-                            que siempre buscan investigar y crecer cada día.</p>
+
                     </div>
                 </div>
-                <div class="row g-4 mb-5">
-                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="0">
-                        <div class="mv-card">
-                            <div class="mv-icon"><i class="fa-solid fa-bullseye"></i></div>
-                            <h4>Misión</h4>
-                            <p>GIECOM está comprometido con la generación de conocimiento científico y tecnológico,
-                                mediante el trabajo multidisciplinario en las áreas de gestión del conocimiento,
-                                comunicación, electrónica e informática, de tal manera que los resultados promuevan el
-                                crecimiento y formación de los investigadores, así como el desarrollo tecnológico en la
-                                región Amazónica, realizando alianzas estratégicas con diferentes empresas, las cuales
-                                se beneficien de nuestros logros alcanzados y de igual forma ayuden a la financiación de
-                                los diferentes proyectos a realizar.</p>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <h3 class="subsection-title">Nuestra historia</h3>
+                    <p class="text-body-custom">El Semillero de Gestión del Conocimiento, Electrónica, Informática y
+                        Comunicaciones GIECOM
+                        surgio como una iniciativa de estudiantes y docentes comprometidos con la generación de
+                        conocimiento aplicado. A lo largo de los años ha crecido hasta convertirse en uno de los
+                        grupos
+                        más activos de la facultad, participando en convocatorias nacionales e internacionales.</p>
+                    <p class="text-body-custom">Y hoy contamos con múltiples líneas de investigación consolidadas
+                        que siempre buscan investigar y crecer cada día.</p>
+                </div>
+            </div>
+            <div class="row g-4 mb-5">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="mv-card">
+                        <div class="mv-icon"><i class="fa-solid fa-bullseye"></i></div>
+                        <h4>Misión</h4>
+                        <p>GIECOM está comprometido con la generación de conocimiento científico y tecnológico,
+                            mediante el trabajo multidisciplinario en las áreas de gestión del conocimiento,
+                            comunicación, electrónica e informática, de tal manera que los resultados promuevan el
+                            crecimiento y formación de los investigadores, así como el desarrollo tecnológico en la
+                            región Amazónica, realizando alianzas estratégicas con diferentes empresas, las cuales
+                            se beneficien de nuestros logros alcanzados y de igual forma ayuden a la financiación de
+                            los diferentes proyectos a realizar.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="mv-card">
+                        <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
+                        <h4>Visión</h4>
+                        <p>Para el año 2018, GIECOM se consolidará como un grupo de investigación reconocido a nivel
+                            nacional e internacional en la generación de conocimiento en áreas de gestión del
+                            conocimiento, comunicación, electrónica e informática, contando con un personal
+                            altamente cualificado y generando proyectos multidisciplinarios que fortalezcan el
+                            desarrollo empresarial de la Región, promoviendo los proyectos que se desarrollan a las
+                            instituciones o empresas para un mutuo beneficio.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="mv-card">
+                        <div class="mv-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h4>Objetivos</h4>
+                        <p>Desarrollar competencias investigativas, publicar resultados científicos, participar
+                            en
+                            eventos académicos y fortalecer alianzas estratégicas con el sector público y privado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up">
+                <h3 class="subsection-title text-center mb-4">Líneas de Investigación</h3>
+                <div class="lines-grid">
+                    <div class="line-item" data-aos="flip-left" data-aos-delay="0">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span>Informática educativa</span>
+                    </div>
+                    <div class="line-item" data-aos="flip-left" data-aos-delay="100">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                        <span>Economía circular</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ////////////////////////// EVENTOS /////////////////////// -->
+    <section id="eventos" class="section-padding" style="background: var(--bg-alt);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Eventos</h2>
+                <p class="section-desc">Descubre nuestros próximos eventos y acompáñanos.</p>
+            </div>
+
+            <h3 class="subsection-title mb-4" data-aos="fade-right">Próximos Eventos</h3>
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">Sep</span>
+                        </div>
+                        <div class="event-content">
+                            <h4>Congreso de TIC</h4>
+                            <ul class="event-meta">
+                                <li><i class="fa-solid fa-clock"></i> 07:00 AM</li>
+                                <li><i class="fa-solid fa-location-dot"></i>Piso 4 - Edificio Yapurá</li>
+                            </ul>
+                            <p>Alístate y mira nuestros proximos artículos, posters y ponencias.</p>
                         </div>
                     </div>
-                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="mv-card">
-                            <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
-                            <h4>Visión</h4>
-                            <p>Para el año 2018, GIECOM se consolidará como un grupo de investigación reconocido a nivel
-                                nacional e internacional en la generación de conocimiento en áreas de gestión del
-                                conocimiento, comunicación, electrónica e informática, contando con un personal
-                                altamente cualificado y generando proyectos multidisciplinarios que fortalezcan el
-                                desarrollo empresarial de la Región, promoviendo los proyectos que se desarrollan a las
-                                instituciones o empresas para un mutuo beneficio.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">3</span>
+                            <span class="month">Nov</span>
                         </div>
-                    </div>
-                    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="mv-card">
-                            <div class="mv-icon"><i class="fa-solid fa-trophy"></i></div>
-                            <h4>Objetivos</h4>
-                            <p>Desarrollar competencias investigativas, publicar resultados científicos, participar
-                                en
-                                eventos académicos y fortalecer alianzas estratégicas con el sector público y privado.
+                        <div class="event-content">
+                            <h4>Taller de Informática Educativa</h4>
+                            <ul class="event-meta">
+                                <li><i class="fa-solid fa-clock"></i> 02:00 PM</li>
+                                <li><i class="fa-solid fa-location-dot"></i>Salón 2115</li>
+                            </ul>
+                            <p>Un taller fundamental para aprender y ver un vistazo de los fundamentos de la informática
+                                educativa.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div data-aos="fade-up">
-                    <h3 class="subsection-title text-center mb-4">Líneas de Investigación</h3>
-                    <div class="lines-grid">
-                        <div class="line-item" data-aos="flip-left" data-aos-delay="0">
-                            <i class="fa-solid fa-book-open"></i>
-                            <span>Informática educativa</span>
+
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">06</span>
+                            <span class="month">Nov</span>
                         </div>
-                        <div class="line-item" data-aos="flip-left" data-aos-delay="100">
-                            <i class="fa-solid fa-hand-holding-dollar"></i>
-                            <span>Economía circular</span>
+                        <div class="event-content">
+                            <h4>Anuncio de AgroGame</h4>
+                            <ul class="event-meta">
+                                <li><i class="fa-solid fa-clock"></i> 08:00 AM</li>
+                                <li><i class="fa-solid fa-location-dot"></i> Sala 5 Bloque 7</li>
+                            </ul>
+                            <p>Muestra de una primer demo de una una nueva iniciativa. AgroGame.</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <h3 class="subsection-title mb-4" data-aos="fade-right">Eventos Pasados</h3>
+            <div class="row g-4">
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="event-card past-event">
+                        <div class="event-content">
+                            <h4>Participación en COP16</h4>
+                            <ul class="event-meta">
+                                <li><i class="fa-regular fa-calendar"></i> Octubre 2024</li>
+                                <li><i class="fa-solid fa-location-dot"></i> Cali, Colombia</li>
+                            </ul>
+                            <p>GIECOM participó activamente presentando iniciativas sostenibles en este evento de
+                                impacto mundial.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-card past-event">
+                        <div class="event-content">
+                            <h4>Visita a Vereda Damas Arriba</h4>
+                            <ul class="event-meta">
+                                <li><i class="fa-regular fa-calendar"></i> Septiembre 2024</li>
+                                <li><i class="fa-solid fa-location-dot"></i> Florencia, Caquetá</li>
+                            </ul>
+                            <p>Primera toma de datos para AgroGame y otros proyectos de impacto en la comunidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- ////////////////////////// EQUIPOS /////////////////////// -->
+    <section id="equipos" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Equipos de Trabajo</h2>
+                <p class="section-desc">Conoce los grupos detrás de nuestros proyectos e investigaciones.</p>
+            </div>
+
+
+            <div class="team-group">
+                <div class="team-header text-center" data-aos="fade-up">
+                    <h3 class="subsection-title">Dirección General</h3>
+                    <p class="text-body-custom mx-auto" style="max-width: 600px;">Líder principal del Semillero GIECOM,
+                        impulsando la investigación y el crecimiento de los proyectos.</p>
+                </div>
+
+                <div class="members-grid" style="grid-template-columns: 1fr;">
+                    <div class="member-card mx-auto" data-aos="fade-up" data-aos-delay="0"
+                        style="max-width: 350px; width: 100%;">
+                        <div class="member-img-wrapper">
+                            <img src="./img/giecom.png" alt="Líder de Semillero" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h4>Heriberto</h4>
+                            <span class="member-role">Líder del Semillero</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-group">
+                <div class="team-header text-center" data-aos="fade-up">
+                    <h3 class="subsection-title">Desarrollo Software</h3>
+                    <p class="text-body-custom mx-auto" style="max-width: 600px;">Encargados de construir las soluciones
+                        tecnológicas, hardware y aplicaciones interactivas para nuestros proyectos.</p>
+                </div>
+
+                <div class="members-grid">
+                    <div class="member-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="member-img-wrapper">
+                            <img src="./img/fotos/andres.png" alt="Integrante 1" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h4>Andrés</h4>
+                            <span class="member-role">Desarrollador Backend</span>
+                        </div>
+                    </div>
+
+                    <div class="member-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-img-wrapper">
+                            <img src="./img/giecom.png" alt="Integrante 2" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h4>Oscar</h4>
+                            <span class="member-role">Desarrollador Frontend</span>
+                        </div>
+                    </div>
+
+                    <div class="member-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-img-wrapper">
+                            <img src="./img/giecom.png" alt="Integrante 3" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h4>Cristian</h4>
+                            <span class="member-role">Desarrollador FullStack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="team-group">
+                <div class="team-header text-center" data-aos="fade-up">
+                    <h3 class="subsection-title">AgroGame</h3>
+                    <p class="text-body-custom mx-auto" style="max-width: 600px;">Nuestro grupo enfocado en el
+                        diseño de la demo AgroGame</p>
+                </div>
+
+                <div class="members-grid">
+                    <div class="member-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="member-img-wrapper">
+                            <img src="./img/fotos/yo.png" alt="Integrante 4" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h4>Julian</h4>
+                            <span class="member-role">Líder de proyecto</span>
+                        </div>
+                    </div>
+
+                    <div class="member-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-img-wrapper">
+                            <img src="./img/fotos/aldo.png" alt="Integrante 5" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h4>Aldo</h4>
+                            <span class="member-role">Artista 3D</span>
+                        </div>
+                    </div>
+
+                    <div class="member-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-img-wrapper">
+                            <img src="./img/fotos/alejandro.png" alt="Integrante 6" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h4>Alejandro</h4>
+                            <span class="member-role">Desarrollador FullStack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-group mb-0">
+                <div class="team-header text-center" data-aos="fade-up">
+                    <h3 class="subsection-title">Informática Educativa</h3>
+                    <p class="text-body-custom mx-auto" style="max-width: 600px;"> Enfocados en la investigación de
+                        temas
+                        para informática educativa</p>
+                </div>
+
+                <div class="members-grid">
+                    <div class="member-card" data-aos="fade-up" data-aos-delay="0">
+                        <div class="member-img-wrapper">
+                            <img src="./img/fotos/alejandra.png" alt="Integrante 1" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h4>Alejandra</h4>
+                            <span class="member-role">Investigadora</span>
+                        </div>
+                    </div>
+
+                    <div class="member-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-img-wrapper">
+                            <img src="./img/giecom.png" alt="Integrante 2" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h4>Steffany</h4>
+                            <span class="member-role">Investigadora</span>
+                        </div>
+                    </div>
+
+                    <div class="member-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-img-wrapper">
+                            <img src="./img/giecom.png" alt="Integrante 3" class="member-img">
+                        </div>
+                        <div class="member-info">
+                            <h4>Juan</h4>
+                            <span class="member-role">Investigador</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- ////////////////////////// RESULTADOS /////////////////////// -->
+    <section id="resultados" class="section-padding" style="background: var(--bg-alt);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Resultados de Investigación</h2>
+                <p class="section-desc">Descubre los proyectos que hemos desarrollado y sus principales resultados.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="result-card">
+                        <div class="result-icon"><i class="fa-solid fa-seedling"></i></div>
+                        <h4 class="result-project">AgroGame</h4>
+                        <strong class="result-title">Prototipo Funcional</strong>
+                        <p>Desarrollo de un entorno virtual interactivo para la enseñanza de técnicas agropecuarias en
+                            la región.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="result-card">
+                        <div class="result-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h4 class="result-project">Monitoreo IoT</h4>
+                        <strong class="result-title">Sistema de Sensores</strong>
+                        <p>Implementación de una red de sensores para medición de variables ambientales en tiempo real.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="result-card">
+                        <div class="result-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4 class="result-project">Apropiación Social</h4>
+                        <strong class="result-title">Modelos Educativos</strong>
+                        <p>Diseño de nuevas metodologías de apropiación del conocimiento para comunidades rurales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ////////////////////////// PRODUCTOS /////////////////////// -->
+    <section id="productos" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Productos Académicos</h2>
+                <p class="section-desc">Publicaciones, libros y ponencias generados por nuestro semillero.</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-item" data-aos="fade-right" data-aos-delay="0">
+                    <div class="product-icon"><i class="fa-solid fa-book"></i></div>
+                    <div class="product-info">
+                        <h4>Impacto de las TIC en la Amazonía</h4>
+                        <div class="product-meta">
+                            <span><i class="fa-solid fa-user"></i> Autor: Ana Martínez</span>
+                            <span><i class="fa-regular fa-calendar"></i> 2023</span>
+                        </div>
+                        <a href="#" class="btn-download"><i class="fa-solid fa-download"></i> Descargar PDF</a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="product-icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <div class="product-info">
+                        <h4>Estudio sobre Economía Circular</h4>
+                        <div class="product-meta">
+                            <span><i class="fa-solid fa-user"></i> Autores: Luis Rodríguez, Carlos López</span>
+                            <span><i class="fa-regular fa-calendar"></i> 2024</span>
+                        </div>
+                        <a href="#" class="btn-download"><i class="fa-solid fa-link"></i> Ver Artículo</a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="product-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+                    <div class="product-info">
+                        <h4>Sistemas IoT en Cultivos</h4>
+                        <div class="product-meta">
+                            <span><i class="fa-solid fa-user"></i> Autor: Juan Pérez</span>
+                            <span><i class="fa-regular fa-calendar"></i> 2022</span>
+                        </div>
+                        <a href="#" class="btn-download"><i class="fa-solid fa-link"></i> Ver Ponencia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ////////////////////////// GALERÍA /////////////////////// -->
+    <section id="galeria" class="section-padding" style="background: var(--bg-alt);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Galería de Imágenes</h2>
+                <p class="section-desc">Un recorrido visual por nuestros eventos, proyectos y salidas de campo.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <a href="./img/1.jpeg" data-lightbox="galeria-giecom" data-title="Salida de campo" class="gallery-item"
+                    data-aos="zoom-in" data-aos-delay="0">
+                    <img src="./img/1.jpeg" alt="Galería 1">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </a>
+                <a href="./img/2.jpg" data-lightbox="galeria-giecom" data-title="Participación en congreso"
+                    class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="./img/2.jpg" alt="Galería 2">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </a>
+                <a href="./img/4.jpg" data-lightbox="galeria-giecom" data-title="Evento COP16" class="gallery-item"
+                    data-aos="zoom-in" data-aos-delay="200">
+                    <img src="./img/4.jpg" alt="Galería 3">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </a>
+                <a href="./img/WhatsApp Image 2026-04-01 at 12.41.51 (1).jpeg" data-lightbox="galeria-giecom"
+                    data-title="Galería 4" class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="./img/WhatsApp Image 2026-04-01 at 12.41.51 (1).jpeg" alt="Galería 4">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </a>
+                <a href="./img/WhatsApp Image 2026-04-01 at 12.41.51.jpeg" data-lightbox="galeria-giecom"
+                    data-title="Galería 5" class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="./img/WhatsApp Image 2026-04-01 at 12.41.51.jpeg" alt="Galería 5">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </a>
+                <a href="./img/WhatsApp Image 2026-04-01 at 12.41.52 (1).jpeg" data-lightbox="galeria-giecom"
+                    data-title="Galería 6" class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="./img/WhatsApp Image 2026-04-01 at 12.41.52 (1).jpeg" alt="Galería 6">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </a>
+                <a href="./img/WhatsApp Image 2026-04-01 at 12.41.52.jpeg" data-lightbox="galeria-giecom"
+                    data-title="Galería 7" class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="./img/WhatsApp Image 2026-04-01 at 12.41.52.jpeg" alt="Galería 7">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </a>
+                <a href="https://scontent.fnva1-1.fna.fbcdn.net/v/t39.30808-6/473366781_122148890990332198_4481533098058349838_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGdju11AS-4RI5AZ2hwdYxllJvv8-pUYJGUm-_z6lRgkfLuN4jeOTrIAz324c2O650nALgtgv9dRj-F11mwH1qd&_nc_ohc=D7BNBtneFUsQ7kNvwHG5Ktl&_nc_oc=Adq8VkbmMKZbvQ98DRb11EAGuGQTZSB-dsg2VJWB23lWu_kVRPPOl5Ceh2nBWDF6QyU&_nc_zt=23&_nc_ht=scontent.fnva1-1.fna&_nc_gid=2LOY6uXMw5kqk2vGvMAinQ&_nc_ss=7a3a8&oh=00_Af3ZAimatyscPQlHNsctwTJqGepfJ-zgYx_sKZ925PUwBg&oe=69D33848"
+                    data-lightbox="galeria-giecom" data-title="Galería 8" class="gallery-item" data-aos="zoom-in"
+                    data-aos-delay="700">
+                    <img src="https://scontent.fnva1-1.fna.fbcdn.net/v/t39.30808-6/473366781_122148890990332198_4481533098058349838_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGdju11AS-4RI5AZ2hwdYxllJvv8-pUYJGUm-_z6lRgkfLuN4jeOTrIAz324c2O650nALgtgv9dRj-F11mwH1qd&_nc_ohc=D7BNBtneFUsQ7kNvwHG5Ktl&_nc_oc=Adq8VkbmMKZbvQ98DRb11EAGuGQTZSB-dsg2VJWB23lWu_kVRPPOl5Ceh2nBWDF6QyU&_nc_zt=23&_nc_ht=scontent.fnva1-1.fna&_nc_gid=2LOY6uXMw5kqk2vGvMAinQ&_nc_ss=7a3a8&oh=00_Af3ZAimatyscPQlHNsctwTJqGepfJ-zgYx_sKZ925PUwBg&oe=69D33848"
+                        alt="Galería 8">
+                    <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                </a>
+
+            </div>
+        </div>
+    </section>
 
 
 

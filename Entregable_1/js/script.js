@@ -15,10 +15,11 @@ AOS.init({
 
 /* ─── 2. Lightbox2 Config ─── */
 lightbox.option({
-  resizeDuration: 300,
+  resizeDuration: 600,
   wrapAround: true,
   albumLabel: 'Imagen %1 de %2',
-  fadeDuration: 300,
+  fadeDuration: 500,
+  imageFadeDuration: 500,
   positionFromTop: 80,
   disableScrolling: true,
 });
