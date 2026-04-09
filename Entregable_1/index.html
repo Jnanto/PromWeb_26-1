@@ -5,27 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giecom</title>
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/lightbox.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- ////////////////////////// NAVEGADOR /////////////////////// -->
+    <!-- ======= NAVEGADOR ======= -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#home">
                 <img id="logoGie" src="./img/GieSV2.png" alt="Logo Giecom">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-                aria-controls="navMenu" aria-expanded="false" aria-label="Menú">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="toggler-icon"></span>
                 <span class="toggler-icon"></span>
                 <span class="toggler-icon"></span>
@@ -45,28 +43,36 @@
         </div>
     </nav>
 
-    <!-- ////////////////////////// DASH /////////////////////// -->
+    <!-- ======= INICIO / HERO ======= -->
     <section id="home" class="hero-section">
         <div class="hero-overlay"></div>
         <div class="hero-particles" id="particles"></div>
         <div class="container hero-content text-center">
-            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-                Grupo de Investigación <br /><span class="gradient-text">GIECOM</span>
+            <h1 class="hero-title" data-aos="fade-up">
+                Grupo de Investigación <br><span class="gradient-text">GIECOM</span>
             </h1>
-            <p class="hero-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <p class="hero-subtitle" data-aos="fade-up">
                 Gestión del Conocimiento, Electrónica, Informática y Comunicaciones.
             </p>
-            <div class="hero-stats" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                <div class="stat-item"><span class="stat-number" data-target="48">3</span><span
-                        class="stat-label">Proyectos</span></div>
-                <div class="stat-item"><span class="stat-number" data-target="120">10</span><span
-                        class="stat-label">Integrantes</span></div>
-                <div class="stat-item"><span class="stat-number" data-target="32">20</span><span
-                        class="stat-label">Publicaciones</span></div>
-                <div class="stat-item"><span class="stat-number" data-target="8">8</span><span
-                        class="stat-label">Años</span></div>
+            <div class="hero-stats" data-aos="fade-up">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="48">3</span>
+                    <span class="stat-label">Proyectos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="120">10</span>
+                    <span class="stat-label">Integrantes</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="32">20</span>
+                    <span class="stat-label">Publicaciones</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="8">8</span>
+                    <span class="stat-label">Años</span>
+                </div>
             </div>
-            <div class="hero-btns" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+            <div class="hero-btns" data-aos="fade-up">
                 <a href="#sobre" class="btn-primary-custom">Conoce Más</a>
                 <a href="#contacto" id="unete" class="btn-outline-custom">Únete</a>
             </div>
@@ -76,16 +82,14 @@
         </div>
     </section>
 
-    <!-- ////////////////////////// CARUSEL /////////////////////// -->
+    <!-- ======= CARRUSEL ======= -->
     <section id="carrusel">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                    class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -112,33 +116,31 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </section>
 
-
-    <!-- ////////////////////////// SOBRE /////////////////////// -->
+    <!-- ======= SOBRE NOSOTROS ======= -->
     <section id="sobre" class="section-padding">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-
                 <h2 class="section-title">Sobre Nosotros</h2>
                 <p class="section-desc">Conoce nuestra historia, propósito y líneas de investigación.</p>
             </div>
+
             <div class="row align-items-center mb-5">
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="about-image-box">
                         <div class="about-img-placeholder">
                             <img src="./img/giecom.png" alt="GieIMG">
                         </div>
-
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
@@ -146,15 +148,15 @@
                     <p class="text-body-custom">El Semillero de Gestión del Conocimiento, Electrónica, Informática y
                         Comunicaciones GIECOM
                         surgio como una iniciativa de estudiantes y docentes comprometidos con la generación de
-                        conocimiento aplicado. A lo largo de los años ha crecido hasta convertirse en uno de los
-                        grupos
+                        conocimiento aplicado. A lo largo de los años ha crecido hasta convertirse en uno de los grupos
                         más activos de la facultad, participando en convocatorias nacionales e internacionales.</p>
                     <p class="text-body-custom">Y hoy contamos con múltiples líneas de investigación consolidadas
                         que siempre buscan investigar y crecer cada día.</p>
                 </div>
             </div>
+
             <div class="row g-4 mb-5">
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="0">
+                <div class="col-md-4" data-aos="zoom-in">
                     <div class="mv-card">
                         <div class="mv-icon"><i class="fa-solid fa-bullseye"></i></div>
                         <h4>Misión</h4>
@@ -167,7 +169,7 @@
                             los diferentes proyectos a realizar.</p>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-md-4" data-aos="zoom-in">
                     <div class="mv-card">
                         <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
                         <h4>Visión</h4>
@@ -179,36 +181,34 @@
                             instituciones o empresas para un mutuo beneficio.</p>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="col-md-4" data-aos="zoom-in">
                     <div class="mv-card">
                         <div class="mv-icon"><i class="fa-solid fa-trophy"></i></div>
                         <h4>Objetivos</h4>
-                        <p>Desarrollar competencias investigativas, publicar resultados científicos, participar
-                            en
-                            eventos académicos y fortalecer alianzas estratégicas con el sector público y privado.
-                        </p>
+                        <p>Desarrollar competencias investigativas, publicar resultados científicos, participar en
+                            eventos académicos y fortalecer alianzas estratégicas con el sector público y privado.</p>
                     </div>
                 </div>
             </div>
+
             <div data-aos="fade-up">
                 <h3 class="subsection-title text-center mb-4">Líneas de Investigación</h3>
                 <div class="lines-grid">
-                    <div class="line-item" data-aos="flip-left" data-aos-delay="0">
+                    <div class="line-item" data-aos="flip-left">
                         <i class="fa-solid fa-book-open"></i>
                         <span>Informática educativa</span>
                     </div>
-                    <div class="line-item" data-aos="flip-left" data-aos-delay="100">
+                    <div class="line-item" data-aos="flip-left">
                         <i class="fa-solid fa-hand-holding-dollar"></i>
                         <span>Economía circular</span>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
-    <!-- ////////////////////////// EVENTOS /////////////////////// -->
-    <section id="eventos" class="section-padding" style="background: var(--bg-alt);">
+    <!-- ======= EVENTOS ======= -->
+    <section id="eventos" class="section-padding" style="background: #E7E7E7;">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Eventos</h2>
@@ -217,7 +217,7 @@
 
             <h3 class="subsection-title mb-4" data-aos="fade-right">Próximos Eventos</h3>
             <div class="row g-4 mb-5">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="event-card">
                         <div class="event-date">
                             <span class="day">15</span>
@@ -234,7 +234,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="event-card">
                         <div class="event-date">
                             <span class="day">3</span>
@@ -247,13 +247,12 @@
                                 <li><i class="fa-solid fa-location-dot"></i>Salón 2115</li>
                             </ul>
                             <p>Un taller fundamental para aprender y ver un vistazo de los fundamentos de la informática
-                                educativa.
-                            </p>
+                                educativa.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="event-card">
                         <div class="event-date">
                             <span class="day">06</span>
@@ -273,8 +272,7 @@
 
             <h3 class="subsection-title mb-4" data-aos="fade-right">Eventos Pasados</h3>
             <div class="row g-4">
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="col-md-6" data-aos="fade-up">
                     <div class="event-card past-event">
                         <div class="event-content">
                             <h4>Participación en COP16</h4>
@@ -287,8 +285,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6" data-aos="fade-up">
                     <div class="event-card past-event">
                         <div class="event-content">
                             <h4>Visita a Vereda Damas Arriba</h4>
@@ -296,8 +293,7 @@
                                 <li><i class="fa-regular fa-calendar"></i> Septiembre 2024</li>
                                 <li><i class="fa-solid fa-location-dot"></i> Florencia, Caquetá</li>
                             </ul>
-                            <p>Primera toma de datos para AgroGame y otros proyectos de impacto en la comunidad.
-                            </p>
+                            <p>Primera toma de datos para AgroGame y otros proyectos de impacto en la comunidad.</p>
                         </div>
                     </div>
                 </div>
@@ -305,7 +301,7 @@
         </div>
     </section>
 
-    <!-- ////////////////////////// EQUIPOS /////////////////////// -->
+    <!-- ======= EQUIPOS ======= -->
     <section id="equipos" class="section-padding">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
@@ -313,17 +309,14 @@
                 <p class="section-desc">Conoce los grupos detrás de nuestros proyectos e investigaciones.</p>
             </div>
 
-
             <div class="team-group">
                 <div class="team-header text-center" data-aos="fade-up">
                     <h3 class="subsection-title">Dirección General</h3>
                     <p class="text-body-custom mx-auto" style="max-width: 600px;">Líder principal del Semillero GIECOM,
                         impulsando la investigación y el crecimiento de los proyectos.</p>
                 </div>
-
                 <div class="members-grid" style="grid-template-columns: 1fr;">
-                    <div class="member-card mx-auto" data-aos="fade-up" data-aos-delay="0"
-                        style="max-width: 350px; width: 100%;">
+                    <div class="member-card mx-auto" data-aos="fade-up" style="max-width: 350px; width: 100%;">
                         <div class="member-img-wrapper">
                             <img src="./img/giecom.png" alt="Líder de Semillero" class="member-img">
                         </div>
@@ -341,9 +334,8 @@
                     <p class="text-body-custom mx-auto" style="max-width: 600px;">Encargados de construir las soluciones
                         tecnológicas, hardware y aplicaciones interactivas para nuestros proyectos.</p>
                 </div>
-
                 <div class="members-grid">
-                    <div class="member-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="member-card" data-aos="fade-up">
                         <div class="member-img-wrapper">
                             <img src="./img/fotos/andres.png" alt="Integrante 1" class="member-img">
                         </div>
@@ -352,8 +344,7 @@
                             <span class="member-role">Desarrollador Backend</span>
                         </div>
                     </div>
-
-                    <div class="member-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-card" data-aos="fade-up">
                         <div class="member-img-wrapper">
                             <img src="./img/giecom.png" alt="Integrante 2" class="member-img">
                         </div>
@@ -362,8 +353,7 @@
                             <span class="member-role">Desarrollador Frontend</span>
                         </div>
                     </div>
-
-                    <div class="member-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-card" data-aos="fade-up">
                         <div class="member-img-wrapper">
                             <img src="./img/giecom.png" alt="Integrante 3" class="member-img">
                         </div>
@@ -382,9 +372,8 @@
                     <p class="text-body-custom mx-auto" style="max-width: 600px;">Nuestro grupo enfocado en el
                         diseño de la demo AgroGame</p>
                 </div>
-
                 <div class="members-grid">
-                    <div class="member-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="member-card" data-aos="fade-up">
                         <div class="member-img-wrapper">
                             <img src="./img/fotos/yo.png" alt="Integrante 4" class="member-img">
                         </div>
@@ -393,8 +382,7 @@
                             <span class="member-role">Líder de proyecto</span>
                         </div>
                     </div>
-
-                    <div class="member-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-card" data-aos="fade-up">
                         <div class="member-img-wrapper">
                             <img src="./img/fotos/aldo.png" alt="Integrante 5" class="member-img">
                         </div>
@@ -403,8 +391,7 @@
                             <span class="member-role">Artista 3D</span>
                         </div>
                     </div>
-
-                    <div class="member-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-card" data-aos="fade-up">
                         <div class="member-img-wrapper">
                             <img src="./img/fotos/alejandro.png" alt="Integrante 6" class="member-img">
                         </div>
@@ -416,16 +403,15 @@
                 </div>
             </div>
 
+
             <div class="team-group mb-0">
                 <div class="team-header text-center" data-aos="fade-up">
                     <h3 class="subsection-title">Informática Educativa</h3>
-                    <p class="text-body-custom mx-auto" style="max-width: 600px;"> Enfocados en la investigación de
-                        temas
+                    <p class="text-body-custom mx-auto" style="max-width: 600px;">Enfocados en la investigación de temas
                         para informática educativa</p>
                 </div>
-
                 <div class="members-grid">
-                    <div class="member-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="member-card" data-aos="fade-up">
                         <div class="member-img-wrapper">
                             <img src="./img/fotos/alejandra.png" alt="Integrante 1" class="member-img">
                         </div>
@@ -434,8 +420,7 @@
                             <span class="member-role">Investigadora</span>
                         </div>
                     </div>
-
-                    <div class="member-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-card" data-aos="fade-up">
                         <div class="member-img-wrapper">
                             <img src="./img/giecom.png" alt="Integrante 2" class="member-img">
                         </div>
@@ -444,8 +429,7 @@
                             <span class="member-role">Investigadora</span>
                         </div>
                     </div>
-
-                    <div class="member-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-card" data-aos="fade-up">
                         <div class="member-img-wrapper">
                             <img src="./img/giecom.png" alt="Integrante 3" class="member-img">
                         </div>
@@ -457,19 +441,17 @@
                 </div>
             </div>
         </div>
-
-        </div>
     </section>
 
-    <!-- ////////////////////////// RESULTADOS /////////////////////// -->
-    <section id="resultados" class="section-padding" style="background: var(--bg-alt);">
+    <!-- ======= RESULTADOS ======= -->
+    <section id="resultados" class="section-padding" style="background: #E7E7E7;">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Resultados de Investigación</h2>
                 <p class="section-desc">Descubre los proyectos que hemos desarrollado y sus principales resultados.</p>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="result-card">
                         <div class="result-icon"><i class="fa-solid fa-seedling"></i></div>
                         <h4 class="result-project">AgroGame</h4>
@@ -478,7 +460,7 @@
                             la región.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="result-card">
                         <div class="result-icon"><i class="fa-solid fa-microchip"></i></div>
                         <h4 class="result-project">Monitoreo IoT</h4>
@@ -487,7 +469,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="result-card">
                         <div class="result-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                         <h4 class="result-project">Apropiación Social</h4>
@@ -499,7 +481,7 @@
         </div>
     </section>
 
-    <!-- ////////////////////////// PRODUCTOS /////////////////////// -->
+    <!-- ======= PRODUCTOS ======= -->
     <section id="productos" class="section-padding">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
@@ -508,50 +490,62 @@
             </div>
 
             <div class="products-grid">
-                <!-- Producto 1 -->
-                <div class="product-item" data-aos="fade-right" data-aos-delay="0">
+
+                <div class="product-item" data-aos="fade-right">
                     <div class="product-icon"><i class="fa-solid fa-book"></i></div>
                     <div class="product-info">
                         <h4>Impacto de las TIC en la Amazonía</h4>
                         <div class="product-meta">
-                            <span><i class="fa-solid fa-user"></i> Autor: Ana Martínez</span>
+                            <span><i class="fa-solid fa-user"></i> Autor: Oscar, Andrés</span>
                             <span><i class="fa-regular fa-calendar"></i> 2023</span>
                         </div>
-                        <a href="#" class="btn-download"><i class="fa-solid fa-download"></i> Descargar PDF</a>
+                        <a href="#productos" class="btn-download"><i class="fa-solid fa-download"></i> Descargar PDF</a>
                     </div>
                 </div>
 
-                <!-- Producto 2 -->
-                <div class="product-item" data-aos="fade-right" data-aos-delay="100">
+                <div class="product-item" data-aos="fade-right">
                     <div class="product-icon"><i class="fa-solid fa-file-lines"></i></div>
                     <div class="product-info">
                         <h4>Estudio sobre Economía Circular</h4>
                         <div class="product-meta">
-                            <span><i class="fa-solid fa-user"></i> Autores: Luis Rodríguez, Carlos López</span>
+                            <span><i class="fa-solid fa-user"></i> Autores: Alejandra, Steffany</span>
                             <span><i class="fa-regular fa-calendar"></i> 2024</span>
                         </div>
-                        <a href="#" class="btn-download"><i class="fa-solid fa-link"></i> Ver Artículo</a>
+                        <a href="https://www.europarl.europa.eu/topics/es/article/20151201STO05603/economia-circular-definicion-importancia-y-beneficios"
+                            class="btn-download"><i class="fa-solid fa-link"></i> Ver Artículo</a>
                     </div>
                 </div>
 
-                <!-- Producto 3 -->
-                <div class="product-item" data-aos="fade-right" data-aos-delay="200">
+                <div class="product-item" data-aos="fade-right">
                     <div class="product-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
                     <div class="product-info">
                         <h4>Sistemas IoT en Cultivos</h4>
                         <div class="product-meta">
-                            <span><i class="fa-solid fa-user"></i> Autor: Juan Pérez</span>
+                            <span><i class="fa-solid fa-user"></i> Autor: Juan, Aldo</span>
                             <span><i class="fa-regular fa-calendar"></i> 2022</span>
                         </div>
-                        <a href="#" class="btn-download"><i class="fa-solid fa-link"></i> Ver Ponencia</a>
+                        <a href="#productos" class="btn-download"><i class="fa-solid fa-link"></i> Ver Ponencia</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-aos="fade-right">
+                    <div class="product-icon"><i class="fa-solid fa-book"></i></div>
+                    <div class="product-info">
+                        <h4>Attention is all you need</h4>
+                        <div class="product-meta">
+                            <span><i class="fa-solid fa-user"></i> Autor: Juan, Cristian</span>
+                            <span><i class="fa-regular fa-calendar"></i> 2022</span>
+                        </div>
+                        <a href="https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf"
+                            class="btn-download"><i class="fa-solid fa-download"></i> Descargar PDF</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ////////////////////////// GALERÍA /////////////////////// -->
-    <section id="galeria" class="section-padding" style="background: var(--bg-alt);">
+    <!-- ======= GALERIA ======= -->
+    <section id="galeria" class="section-padding" style="background: #E7E7E7;">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <h2 class="section-title">Galería de Imágenes</h2>
@@ -559,66 +553,59 @@
             </div>
 
             <div class="gallery-grid">
-                <a href="./img/1.jpeg" data-lightbox="galeria-giecom" data-title="Salida de campo" class="gallery-item"
-                    data-aos="zoom-in" data-aos-delay="0">
+                <a href="./img/1.jpeg" data-lightbox="galeria-giecom" data-title="Salida de campo" class="gallery-item">
                     <img src="./img/1.jpeg" alt="Galería 1">
                     <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                 </a>
                 <a href="./img/2.jpg" data-lightbox="galeria-giecom" data-title="Participación en congreso"
-                    class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    class="gallery-item">
                     <img src="./img/2.jpg" alt="Galería 2">
                     <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                 </a>
-                <a href="./img/4.jpg" data-lightbox="galeria-giecom" data-title="Evento COP16" class="gallery-item"
-                    data-aos="zoom-in" data-aos-delay="200">
+                <a href="./img/4.jpg" data-lightbox="galeria-giecom" data-title="Evento COP16" class="gallery-item">
                     <img src="./img/4.jpg" alt="Galería 3">
                     <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                 </a>
                 <a href="./img/WhatsApp Image 2026-04-01 at 12.41.51 (1).jpeg" data-lightbox="galeria-giecom"
-                    data-title="Galería 4" class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    data-title="Galería 4" class="gallery-item">
                     <img src="./img/WhatsApp Image 2026-04-01 at 12.41.51 (1).jpeg" alt="Galería 4">
                     <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                 </a>
                 <a href="./img/WhatsApp Image 2026-04-01 at 12.41.51.jpeg" data-lightbox="galeria-giecom"
-                    data-title="Galería 5" class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    data-title="Galería 5" class="gallery-item">
                     <img src="./img/WhatsApp Image 2026-04-01 at 12.41.51.jpeg" alt="Galería 5">
                     <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                 </a>
                 <a href="./img/WhatsApp Image 2026-04-01 at 12.41.52 (1).jpeg" data-lightbox="galeria-giecom"
-                    data-title="Galería 6" class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    data-title="Galería 6" class="gallery-item">
                     <img src="./img/WhatsApp Image 2026-04-01 at 12.41.52 (1).jpeg" alt="Galería 6">
                     <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                 </a>
                 <a href="./img/WhatsApp Image 2026-04-01 at 12.41.52.jpeg" data-lightbox="galeria-giecom"
-                    data-title="Galería 7" class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                    data-title="Galería 7" class="gallery-item">
                     <img src="./img/WhatsApp Image 2026-04-01 at 12.41.52.jpeg" alt="Galería 7">
                     <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                 </a>
-                <a href="https://scontent.fnva1-1.fna.fbcdn.net/v/t39.30808-6/473366781_122148890990332198_4481533098058349838_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGdju11AS-4RI5AZ2hwdYxllJvv8-pUYJGUm-_z6lRgkfLuN4jeOTrIAz324c2O650nALgtgv9dRj-F11mwH1qd&_nc_ohc=D7BNBtneFUsQ7kNvwHG5Ktl&_nc_oc=Adq8VkbmMKZbvQ98DRb11EAGuGQTZSB-dsg2VJWB23lWu_kVRPPOl5Ceh2nBWDF6QyU&_nc_zt=23&_nc_ht=scontent.fnva1-1.fna&_nc_gid=2LOY6uXMw5kqk2vGvMAinQ&_nc_ss=7a3a8&oh=00_Af3ZAimatyscPQlHNsctwTJqGepfJ-zgYx_sKZ925PUwBg&oe=69D33848"
-                    data-lightbox="galeria-giecom" data-title="Galería 8" class="gallery-item" data-aos="zoom-in"
-                    data-aos-delay="700">
-                    <img src="https://scontent.fnva1-1.fna.fbcdn.net/v/t39.30808-6/473366781_122148890990332198_4481533098058349838_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGdju11AS-4RI5AZ2hwdYxllJvv8-pUYJGUm-_z6lRgkfLuN4jeOTrIAz324c2O650nALgtgv9dRj-F11mwH1qd&_nc_ohc=D7BNBtneFUsQ7kNvwHG5Ktl&_nc_oc=Adq8VkbmMKZbvQ98DRb11EAGuGQTZSB-dsg2VJWB23lWu_kVRPPOl5Ceh2nBWDF6QyU&_nc_zt=23&_nc_ht=scontent.fnva1-1.fna&_nc_gid=2LOY6uXMw5kqk2vGvMAinQ&_nc_ss=7a3a8&oh=00_Af3ZAimatyscPQlHNsctwTJqGepfJ-zgYx_sKZ925PUwBg&oe=69D33848"
+                <a href="https://scontent.fbog14-1.fna.fbcdn.net/v/t39.30808-6/473948424_122148890972332198_1852566102780539300_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGLT5FMR9FbMOmFXu9j4fDW8RB11iVsU9TxEHXWJWxT1Dpvo4-APzjmPBp05tW4LG8Ws5bDvsm_yrUFN-eUpbhS&_nc_ohc=YMvUrH24AToQ7kNvwGNkmgr&_nc_oc=AdpqkJdlllTDJoICscxVNeg6Ys3iOcBJWjWGl4Y4cdZk3jKcnHZ-rG9msykjzSJF_so&_nc_zt=23&_nc_ht=scontent.fbog14-1.fna&_nc_gid=TRgnseIMerU21CzdqCNdEQ&_nc_ss=7a3a8&oh=00_Af2SaC2-z-ixUJHCryW06Q6N0o_wBWXUAHOlc7k8XlKtJw&oe=69DDA348"
+                    data-lightbox="galeria-giecom" data-title="Galería 8" class="gallery-item">
+                    <img src="https://scontent.fbog14-1.fna.fbcdn.net/v/t39.30808-6/473948424_122148890972332198_1852566102780539300_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeGLT5FMR9FbMOmFXu9j4fDW8RB11iVsU9TxEHXWJWxT1Dpvo4-APzjmPBp05tW4LG8Ws5bDvsm_yrUFN-eUpbhS&_nc_ohc=YMvUrH24AToQ7kNvwGNkmgr&_nc_oc=AdpqkJdlllTDJoICscxVNeg6Ys3iOcBJWjWGl4Y4cdZk3jKcnHZ-rG9msykjzSJF_so&_nc_zt=23&_nc_ht=scontent.fbog14-1.fna&_nc_gid=TRgnseIMerU21CzdqCNdEQ&_nc_ss=7a3a8&oh=00_Af2SaC2-z-ixUJHCryW06Q6N0o_wBWXUAHOlc7k8XlKtJw&oe=69DDA348"
                         alt="Galería 8">
                     <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
                 </a>
-
             </div>
         </div>
     </section>
 
-
-
-    <!-- ////////////////////////// CONTACTO /////////////////////// -->
+    <!-- ======= CONTACTO ======= -->
     <section id="contacto" class="section-padding">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Sección de Contacto</h2>
+                <h2 class="section-title">Contáctanos</h2>
                 <p class="section-desc">¿Tienes alguna duda o quieres ser parte de GIECOM? Escríbenos y nos pondremos en
                     contacto contigo.</p>
             </div>
 
-            <div class="contact-wrapper" data-aos="fade-up" data-aos-delay="100">
-                <!-- Info Section -->
+            <div class="contact-wrapper" data-aos="fade-up">
                 <div class="contact-info">
                     <div class="info-item">
                         <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
@@ -639,14 +626,14 @@
                     <div class="mt-4">
                         <h4 class="mb-3" style="font-size: 1.1rem; font-weight: 700;">Redes Sociales</h4>
                         <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://web.facebook.com/profile.php?id=61559965955066"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#contacto"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#contacto"><i class="fa-brands fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Form Section -->
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="mb-3">
@@ -663,18 +650,16 @@
                             <textarea class="form-control" id="contactMsg" rows="4"
                                 placeholder="¿En qué te podemos ayudar?"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary-custom w-100" id="submitBtn">
+                        <button type="button" class="btn btn-primary-custom w-100" id="submitBtn">
                             <span>Enviar Mensaje</span> <i class="fa-solid fa-paper-plane"></i>
                         </button>
                     </form>
-                    <div id="formSuccess" class="form-success">
-                        ¡Tu mensaje ha sido enviado con éxito! Nos pondremos en contacto pronto.
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Scripts -->
     <script src="./js/bootstrap.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/lightbox.js"></script>
