@@ -1,5 +1,80 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #eee;
+  min-height: 100vh;
+}
+
+/* Header / título */
+.app-header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.app-header h1 {
+  font-size: 2.2rem;
+  color: #f5a623;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.app-header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Grid de tarjetas */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Tarjeta individual */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(245, 166, 35, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  background-color: #ffffff;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-body h3 {
+  font-size: 1.2rem;
+  color: #f5a623;
+  margin-bottom: 0.5rem;
+}
+
+.card-body p {
+  font-size: 0.85rem;
+  color: #bbb;
+  line-height: 1.4;
 }

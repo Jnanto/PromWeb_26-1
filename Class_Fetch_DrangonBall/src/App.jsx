@@ -24,10 +24,15 @@ function App() {
 
   return (
     <>
-      <p>{data ? data.length : 0} characters</p>
-      {data && data.map((character) => (
-        <CardCharacter key={character.id} image={character.image} name={character.name} description={character.description}  />
-      ))}
+      <header className="app-header">
+        <h1>Dragon Ball Characters</h1>
+        <p>{data ? data.length : 0} personajes encontrados</p>
+      </header>
+      <div className="cards-grid">
+        {data && data.map((character) => (
+          <CardCharacter key={character.id} image={character.image} name={character.name} description={character.description}  />
+        ))}
+      </div>
     </>
   )
 }
