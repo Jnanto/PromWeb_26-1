@@ -1,0 +1,23 @@
+.SimpsonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+    .card {
+        border: solid rgb(0, 162, 255) 5px;
+        border-radius: 20px;
+        background-color: rgb(220, 220, 220);
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+    }
+
+
+}

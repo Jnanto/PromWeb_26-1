@@ -1,0 +1,25 @@
+.navbar-drawer-box {
+  width: 250px;
+}
+
+.navbar-logo-btn {
+  margin-right: auto !important;
+}
+
+.navbar-portal-icon {
+  font-size: 32px !important;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 8px;
+}
+
+.navbar-button {
+  border-radius: 0 !important;
+}
+
+.navbar-button-active {
+  font-weight: 700 !important;
+  border-bottom: 2px solid #0e5c78 !important;
+}

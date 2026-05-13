@@ -1,0 +1,17 @@
+.error-container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.error-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.error-icon {
+  font-size: 100px !important;
+  color: #12b4d2 !important;
+}

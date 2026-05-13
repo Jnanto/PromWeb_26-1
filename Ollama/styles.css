@@ -1,0 +1,231 @@
+/* ========================================= */
+/* 🎨 GLOBAL STYLES & TYPOGRAPHY SETUP      */
+/* ========================================= */
+
+/* Google Fonts Import (For better typography) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    /* Define a sophisticated, corporate color palette */
+    --color-primary: #0D1B2A;
+    /* Deep Midnight Blue / Navy */
+    --color-secondary: #415A77;
+    /* Slate Blue */
+    --color-accent: #FFC300;
+    /* Warm Gold/Amber Accent */
+    --color-text-dark: #222831;
+    --color-background-light: #f4f7f9;
+    --color-card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--color-text-dark);
+    background-color: var(--color-background-light);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-primary);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-accent);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+/* Utility classes (assuming you structure your HTML to use these) */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* ========================================= */
+/* 🚀 HERO / JUMBOTRON SECTION STYLING       */
+/* ========================================= */
+
+.hero-section {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    /* Subtle Gradient Overlay for depth */
+    background-image: linear-gradient(145deg, var(--color-primary), #1a293d);
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    color: #c8d1d8;
+    margin-bottom: 30px;
+}
+
+/* Primary Button Styling */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #e0b100;
+    /* Slightly darker gold on hover */
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================= */
+/* 💎 CORE VALUE / CARDS SECTION             */
+/* ========================================= */
+
+.section-title-dark {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title-dark h2 {
+    font-size: 2.2rem;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.card-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    max-width: 350px;
+    background-color: var(--color-card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    /* Soft, lifted shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--color-secondary);
+    /* Accent border on top */
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    /* Stronger lift on hover */
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    margin-top: 0;
+}
+
+.card p {
+    color: #555;
+}
+
+/* ========================================= */
+/* 📞 CTA / CONTACT SECTION STYLING          */
+/* ========================================= */
+
+.cta-section {
+    background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-section h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    color: #c8d1d8;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* ========================================= */
+/* 🏛️ FOOTER STYLING                         */
+/* ========================================= */
+
+.footer-section {
+    background-color: #2c3e50;
+    /* Darker background for footer */
+    color: #bdc3c7;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-col h4 {
+    color: var(--primary-color, #3498db);
+    margin-bottom: 15px;
+}
+
+.footer-col a {
+    display: block;
+    color: #bdc3c7;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.footer-col a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-col {
+        margin-bottom: 25px;
+    }
+}

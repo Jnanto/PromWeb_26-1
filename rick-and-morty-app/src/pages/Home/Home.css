@@ -1,0 +1,19 @@
+.home-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.home-subtitle {
+  margin-bottom: 32px !important;
+}
+
+.home-alert {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.home-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}

@@ -1,0 +1,15 @@
+.calculator-container {
+    padding-left: 450px;
+    background-color: bisque;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+
+input {
+    height: 40px;
+    align-items: center;
+}

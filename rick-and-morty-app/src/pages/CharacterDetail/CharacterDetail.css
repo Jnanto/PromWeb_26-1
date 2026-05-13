@@ -1,0 +1,38 @@
+.detail-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.back-button {
+  margin-bottom: 24px !important;
+}
+
+.back-button-error {
+  margin-top: 16px !important;
+}
+
+.detail-media {
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.detail-content {
+  padding: 32px;
+}
+
+.detail-chips {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.detail-divider {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.detail-field {
+  margin-bottom: 8px !important;
+}
