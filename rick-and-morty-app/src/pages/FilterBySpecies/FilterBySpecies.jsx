@@ -14,6 +14,7 @@ import {
 import { getCharacters } from '../../services/api'
 import CharacterCard from '../../components/CharacterCard/CharacterCard'
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner'
+import misigmortyImg from '../../images/misigmorty.png'
 import './FilterBySpecies.css'
 
 const SPECIES_OPTIONS = [
@@ -60,13 +61,25 @@ function FilterBySpecies() {
     setPage(1)
   }
 
-  const handlePageChange = (event, value) => {
+  const handlePageChange = (_event, value) => {
     setPage(value)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   return (
-    <Container maxWidth="lg" className="filter-container">
+    <Container 
+      maxWidth="lg" 
+      className="filter-container"
+      sx={{
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'top right',
+        backgroundImage: 'none',
+        '@media (min-width: 900px)': {
+          backgroundImage: `url(${misigmortyImg})`,
+          backgroundSize: '200px auto',
+        }
+      }}
+    >
       <Typography variant="h4" component="h1" gutterBottom align="center">
         Filtrar por Especie
       </Typography>
@@ -79,21 +92,23 @@ function FilterBySpecies() {
         Selecciona una especie para ver los personajes correspondientes
       </Typography>
 
-      <FormControl fullWidth className="filter-select">
-        <InputLabel id="species-select-label">Especie</InputLabel>
-        <Select
-          labelId="species-select-label"
-          value={species}
-          label="Especie"
-          onChange={handleSpeciesChange}
-        >
-          {SPECIES_OPTIONS.map((option) => (
-            <MenuItem key={option} value={option}>
-              {option}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
+      <Box className="filter-select-wrapper">
+        <FormControl fullWidth className="filter-select">
+          <InputLabel id="species-select-label">Especie</InputLabel>
+          <Select
+            labelId="species-select-label"
+            value={species}
+            label="Especie"
+            onChange={handleSpeciesChange}
+          >
+            {SPECIES_OPTIONS.map((option) => (
+              <MenuItem key={option} value={option}>
+                {option}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+      </Box>
 
       {loading && <LoadingSpinner />}
 
@@ -113,7 +128,7 @@ function FilterBySpecies() {
         <>
           <Grid container spacing={3}>
             {characters.map((character) => (
-              <Grid item xs={12} sm={6} md={4} lg={3} key={character.id}>
+              <Grid item xs={12} sm={6} md={6} lg={4} key={character.id} className="filter-grid-item">
                 <CharacterCard character={character} />
               </Grid>
             ))}

@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+html, body, #root {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrapper {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --color-primary:    #97ce4c;
+  --color-secondary:  #00d4ff;
+  --color-bg-default: #f5f5f5;
+  --color-bg-paper:   #ffffff;
+  --color-neon:       #97ce4c;
+  --color-neon-cyan:  #00d4ff;
+}
+
+body.dark-mode {
+  --color-bg-default: #0a0a14;
+  --color-bg-paper:   #0d1117;
+}

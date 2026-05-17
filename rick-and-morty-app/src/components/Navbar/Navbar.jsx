@@ -15,12 +15,16 @@ import {
   useTheme,
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import TrackChangesIcon from '@mui/icons-material/TrackChanges'
+import DarkModeIcon from '@mui/icons-material/DarkMode'
+import LightModeIcon from '@mui/icons-material/LightMode'
+import portalImg from '../../images/portal.png'
+import { useDarkMode } from '../../context/DarkModeContext/DarkModeContext'
 import './Navbar.css'
 
 const navLinks = [
-  { label: 'Inicio', path: '/' },
+  { label: 'Personajes', path: '/personajes' },
   { label: 'Filtrar por Especie', path: '/especie' },
+  { label: 'Créditos', path: '/creditos' },
 ]
 
 function Navbar() {
@@ -28,6 +32,7 @@ function Navbar() {
   const location = useLocation()
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('md'))
+  const { darkMode, toggleDarkMode } = useDarkMode()
 
   const toggleDrawer = (open) => () => setDrawerOpen(open)
 
@@ -50,7 +55,7 @@ function Navbar() {
   )
 
   return (
-    <AppBar position="sticky" elevation={4}>
+    <AppBar position="sticky" elevation={4} className="navbar-appbar">
       <Toolbar>
         <IconButton
           component={RouterLink}
@@ -58,11 +63,14 @@ function Navbar() {
           color="inherit"
           className="navbar-logo-btn"
         >
-          <TrackChangesIcon className="navbar-portal-icon" />
+          <img src={portalImg} alt="Portal" className="navbar-portal-icon" />
         </IconButton>
 
         {isMobile ? (
           <>
+            <IconButton color="inherit" onClick={toggleDarkMode} className="navbar-theme-toggle">
+              {darkMode ? <LightModeIcon /> : <DarkModeIcon />}
+            </IconButton>
             <IconButton color="inherit" onClick={toggleDrawer(true)}>
               <MenuIcon />
             </IconButton>
@@ -83,6 +91,9 @@ function Navbar() {
                 {link.label}
               </Button>
             ))}
+            <IconButton color="inherit" onClick={toggleDarkMode} className="navbar-theme-toggle">
+              {darkMode ? <LightModeIcon /> : <DarkModeIcon />}
+            </IconButton>
           </Box>
         )}
       </Toolbar>

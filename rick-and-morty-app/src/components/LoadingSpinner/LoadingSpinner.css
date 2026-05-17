@@ -1,9 +1,12 @@
 .spinner-container {
+  --spinner-padding-y: 64px;
+  --spinner-gap: 16px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 64px;
-  padding-bottom: 64px;
-  gap: 16px;
+  padding-top: var(--spinner-padding-y);
+  padding-bottom: var(--spinner-padding-y);
+  gap: var(--spinner-gap);
 }

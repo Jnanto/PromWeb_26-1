@@ -2,37 +2,47 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material'
+import { DarkModeProvider, useDarkMode } from './context/DarkModeContext/DarkModeContext'
+import './main.css'
 import App from './App.jsx'
 
-const theme = createTheme({
-  palette: {
-    mode: 'light',
-    primary: {
-      main: '#12b4d2',
+function ThemedApp() {
+  const { darkMode } = useDarkMode()
+
+  const theme = createTheme({
+    palette: {
+      mode: darkMode ? 'dark' : 'light',
+      primary: {
+        main: '#97ce4c',
+      },
+      secondary: {
+        main: '#00d4ff',
+      },
+      background: {
+        default: darkMode ? '#0a0a14' : '#f5f5f5',
+        paper:   darkMode ? '#0d1117' : '#ffffff',
+      },
     },
-    secondary: {
-      main: '#1a8c70',
+    typography: {
+      fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+      h4: { fontWeight: 700 },
     },
-    background: {
-      default: '#e8f9f6',
-      paper: '#ffffff',
-    },
-  },
-  typography: {
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-    h4: {
-      fontWeight: 700,
-    },
-  },
-})
+  })
+
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+    </ThemeProvider>
+  )
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <App />
-      </ThemeProvider>
+      <DarkModeProvider>
+        <ThemedApp />
+      </DarkModeProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )

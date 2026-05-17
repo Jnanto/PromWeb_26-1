@@ -11,6 +11,7 @@ import { getCharacters } from '../../services/api'
 import CharacterCard from '../../components/CharacterCard/CharacterCard'
 import SearchBar from '../../components/SearchBar/SearchBar'
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner'
+import misigmortyImg from '../../images/misigmorty.png'
 import './Home.css'
 
 function Home() {
@@ -49,13 +50,25 @@ function Home() {
     setPage(1)
   }
 
-  const handlePageChange = (event, value) => {
+  const handlePageChange = (_event, value) => {
     setPage(value)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   return (
-    <Container maxWidth="lg" className="home-container">
+    <Container 
+      maxWidth="lg" 
+      className="home-container"
+      sx={{
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'top right',
+        backgroundImage: 'none',
+        '@media (min-width: 900px)': {
+          backgroundImage: `url(${misigmortyImg})`,
+          backgroundSize: '200px auto',
+        }
+      }}
+    >
       <Typography variant="h4" component="h1" gutterBottom align="center">
         Todos los Personajes
       </Typography>
@@ -68,7 +81,9 @@ function Home() {
         Explora el universo de Rick and Morty
       </Typography>
 
-      <SearchBar value={searchTerm} onChange={handleSearchChange} />
+      <Box className="search-bar-wrapper">
+        <SearchBar value={searchTerm} onChange={handleSearchChange} />
+      </Box>
 
       {loading && <LoadingSpinner />}
 
@@ -88,7 +103,7 @@ function Home() {
         <>
           <Grid container spacing={3}>
             {characters.map((character) => (
-              <Grid item xs={12} sm={6} md={4} lg={3} key={character.id}>
+              <Grid item xs={12} sm={6} md={6} lg={4} key={character.id} className="home-grid-item">
                 <CharacterCard character={character} />
               </Grid>
             ))}

@@ -1,25 +1,91 @@
+.navbar-appbar {
+  --navbar-bg-color: #0a0a14;
+  --navbar-border-color: #97ce4c;
+  --navbar-border-width: 2px;
+  --navbar-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  --navbar-active-color: #97ce4c;
+  --navbar-active-font-weight: 700;
+  --navbar-active-border-width: 2px;
+  --navbar-portal-size: 80px;
+  --navbar-links-gap: 8px;
+
+  background-color: var(--navbar-bg-color) !important;
+  border-bottom: var(--navbar-border-width) solid var(--navbar-border-color) !important;
+  box-shadow: var(--navbar-shadow) !important;
+
+  body.dark-mode & {
+    --navbar-bg-color: #0a0a14;
+    --navbar-border-color: #97ce4c;
+    --navbar-active-color: #97ce4c;
+  }
+
+  .navbar-logo-btn {
+    margin-right: auto !important;
+
+    .navbar-portal-icon {
+      width: var(--navbar-portal-size);
+      height: var(--navbar-portal-size);
+      object-fit: contain;
+
+      @media (max-width: 480px) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  .navbar-links {
+    display: flex;
+    gap: var(--navbar-links-gap);
+  }
+
+  .navbar-button {
+    border-radius: 0 !important;
+    color: #ffffff !important;
+
+    &.navbar-button-active {
+      color: var(--navbar-active-color) !important;
+      font-weight: var(--navbar-active-font-weight) !important;
+      border-bottom: var(--navbar-active-border-width) solid var(--navbar-active-color) !important;
+    }
+  }
+
+  .navbar-theme-toggle {
+    margin-left: 8px;
+    color: #ffffff !important;
+  }
+
+  .MuiIconButton-root {
+    color: #ffffff !important;
+  }
+}
+
 .navbar-drawer-box {
-  width: 250px;
-}
+  --navbar-drawer-width: 250px;
+  --navbar-drawer-bg: #0a0a14;
 
-.navbar-logo-btn {
-  margin-right: auto !important;
-}
+  width: var(--navbar-drawer-width);
+  background-color: var(--navbar-drawer-bg);
 
-.navbar-portal-icon {
-  font-size: 32px !important;
-}
+  body.dark-mode & {
+    --navbar-drawer-bg: #0a0a14;
+  }
 
-.navbar-links {
-  display: flex;
-  gap: 8px;
-}
+  .MuiListItemText-primary {
+    color: #ffffff !important;
+  }
 
-.navbar-button {
-  border-radius: 0 !important;
-}
+  .MuiListItemButton-root {
+    &:hover {
+      background-color: rgba(151, 206, 76, 0.1) !important;
+    }
 
-.navbar-button-active {
-  font-weight: 700 !important;
-  border-bottom: 2px solid #0e5c78 !important;
+    &.Mui-selected {
+      background-color: rgba(151, 206, 76, 0.15) !important;
+
+      .MuiListItemText-primary {
+        color: #97ce4c !important;
+      }
+    }
+  }
 }
